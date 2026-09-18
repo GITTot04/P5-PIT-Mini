@@ -73,3 +73,7 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Custom added
+P5-PIT-Mini-Unity/Assets/XR/Settings/OpenXRPackageSettings.asset
+P5-PIT-Mini-Unity/ProjectSettings/EditorBuildSettings.asset
