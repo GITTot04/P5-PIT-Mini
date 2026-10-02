@@ -361,7 +361,19 @@ MonoBehaviour:
       m_Calls: []
   m_Activated:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7420434460448526779}
+        m_TargetAssemblyTypeName: Flashlight, Assembly-CSharp
+        m_MethodName: FlashlightToggle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Deactivated:
     m_PersistentCalls:
       m_Calls: []
@@ -437,17 +449,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36f443a2f23fe364e8eb2a40eb6a70fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  switchFlashlight:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Switch Flashlight
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 1d6f828b-46db-40ab-b9e6-f5782d40eac8
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-      m_Priority: 0
-    m_Reference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   lightIntensity: 10
