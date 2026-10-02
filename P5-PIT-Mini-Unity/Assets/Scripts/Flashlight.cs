@@ -5,19 +5,17 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class Flashlight : MonoBehaviour
 {
-    public InputActionProperty switchFlashlight;
     bool equipped;
     Light flashlight;
     public float lightIntensity;
     private void Start()
     {
         GetComponent<XRGrabInteractable>().interactionManager = GameObject.Find("XR Interaction Manager").GetComponent<XRInteractionManager>();
-        switchFlashlight.action.performed += OnAndOff;
         flashlight = transform.GetChild(0).gameObject.GetComponent<Light>();
         flashlight.intensity = 0;
     }
 
-    private void OnAndOff(InputAction.CallbackContext obj)
+    public void FlashlightToggle()
     {
         if (equipped)
         {
