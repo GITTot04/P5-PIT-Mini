@@ -13,7 +13,7 @@ public class Flashlight : MonoBehaviour
         GetComponent<XRGrabInteractable>().interactionManager = GameObject.Find("XR Interaction Manager").GetComponent<XRInteractionManager>();
         flashlight = transform.GetChild(0).gameObject.GetComponent<Light>();
         flashlight.intensity = 0;
-        defaultPosition = GameObject.Find("Flashlight location (REMOVE BOX)").GetComponent<Transform>();
+        defaultPosition = GameObject.Find("Flashlight location").GetComponent<Transform>();
         transform.SetParent(defaultPosition, false);
         transform.localScale = new Vector3(1, 1, 1);
     }
