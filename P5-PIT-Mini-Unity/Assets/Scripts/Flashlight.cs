@@ -15,7 +15,8 @@ public class Flashlight : MonoBehaviour
         flashlight.intensity = 0;
         defaultPosition = GameObject.Find("Flashlight location").GetComponent<Transform>();
         transform.SetParent(defaultPosition, false);
-        transform.localScale = new Vector3(1, 1, 1);
+        transform.localScale = Vector3.one;
+        transform.localPosition = Vector3.zero;
     }
 
     public void FlashlightToggle()
@@ -38,7 +39,7 @@ public class Flashlight : MonoBehaviour
         equipped = false;
         flashlight.intensity = 0;
         transform.SetParent(defaultPosition, false);
-        transform.localScale = new Vector3(1, 1, 1);
+        transform.localScale = Vector3.one;
         transform.position = defaultPosition.position;
     }
 
