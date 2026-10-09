@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -8,11 +7,15 @@ public class Flashlight : MonoBehaviour
     bool equipped;
     Light flashlight;
     public float lightIntensity;
+    Transform defaultPosition;
     private void Start()
     {
         GetComponent<XRGrabInteractable>().interactionManager = GameObject.Find("XR Interaction Manager").GetComponent<XRInteractionManager>();
         flashlight = transform.GetChild(0).gameObject.GetComponent<Light>();
         flashlight.intensity = 0;
+        defaultPosition = GameObject.Find("Flashlight location").GetComponent<Transform>();
+        transform.SetParent(defaultPosition, false);
+        transform.localScale = new Vector3(1, 1, 1);
     }
 
     public void FlashlightToggle()
@@ -34,10 +37,15 @@ public class Flashlight : MonoBehaviour
     {
         equipped = false;
         flashlight.intensity = 0;
+        transform.SetParent(defaultPosition, false);
+        transform.localScale = new Vector3(1, 1, 1);
+        transform.position = defaultPosition.position;
     }
 
     public void Pickup()
     {
         equipped = true;
+        transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+        transform.SetParent(null, true);
     }
 }
