@@ -66,7 +66,7 @@ Material:
     - _NoiseControl: 3.47
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Strength: 0.1
+    - _Strength: 0.13
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1

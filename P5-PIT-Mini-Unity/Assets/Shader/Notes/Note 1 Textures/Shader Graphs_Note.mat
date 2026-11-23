@@ -63,10 +63,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _NoiseControl: 3.47
+    - _NoiseControl: 1.7
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Strength: 0.1
+    - _Strength: 1.98
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
