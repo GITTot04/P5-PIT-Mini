@@ -892,11 +892,63 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5772645049777873785, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772645049777873785, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772645049777873785, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 3380540664301776703}
+    - target: {fileID: 5772645049777873785, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772645049777873785, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HandVisibility, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3699416259844767967, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3380540664301776704}
   m_SourcePrefab: {fileID: 100100000, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+--- !u!114 &3380540664301776702 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6772300495330990668, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+  m_PrefabInstance: {fileID: 3380540664301776701}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.XRInteractionManager
+--- !u!1 &3380540664301776703 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3699416259844767967, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+  m_PrefabInstance: {fileID: 3380540664301776701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3380540664301776704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3380540664301776703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e31ed9b9859bc3348b818367fe8b2e0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HandlingFruitPouch
+  xrManager: {fileID: 3380540664301776702}
 --- !u!1001 &8542092592474619037
 PrefabInstance:
   m_ObjectHideFlags: 0
