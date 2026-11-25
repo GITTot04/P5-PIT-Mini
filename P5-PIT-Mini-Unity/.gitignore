@@ -77,6 +77,3 @@ crashlytics-build.properties
 # Custom added
 P5-PIT-Mini-Unity/Assets/XR/Settings/OpenXRPackageSettings.asset
 P5-PIT-Mini-Unity/ProjectSettings/EditorBuildSettings.asset
-
-P5-PIT-Mini-Unity/Assets/Samples/AI Navigation/2.0.14/Build And Connect NavMesh Surfaces/Terrains/layer_LightmapWithFog(2048.000,2048.000)(0.000,0.000)(0.000,0.000,0.000),0.000,0.000.terrainlayer
-P5-PIT-Mini-Unity/Assets/Samples/AI Navigation/2.0.14/Build And Connect NavMesh Surfaces/Terrains/layer_LightmapWithFog(2048.000,2048.000)(0.000,0.000)(0.000,0.000,0.000),0.000,0.000.terrainlayer.meta
