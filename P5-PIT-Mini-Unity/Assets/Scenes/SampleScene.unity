@@ -119,6 +119,140 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &116042536 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8033496799136007697, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+  m_PrefabInstance: {fileID: 3380540664301776701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &116042537
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116042536}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 55
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &116042538
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116042536}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &116042542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116042536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e31ed9b9859bc3348b818367fe8b2e0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HandlingFruitPouch
+  xrManager: {fileID: 3380540664301776702}
+  insideFruitPouch: 0
+--- !u!1 &217654568 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7223652322528553074, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+  m_PrefabInstance: {fileID: 3380540664301776701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &217654570
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217654568}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &217654571
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217654568}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 55
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &217654575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217654568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e31ed9b9859bc3348b818367fe8b2e0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HandlingFruitPouch
+  xrManager: {fileID: 3380540664301776702}
+  insideFruitPouch: 0
 --- !u!1 &316414146
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,7 +609,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 2
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -791,6 +925,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 177766701654196992, guid: 2e2a11be2407db1448cd2bf97efe4d62, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1399636373460034539, guid: 2e2a11be2407db1448cd2bf97efe4d62, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.0100646
@@ -892,6 +1030,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3760349322882733802, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577591561262705774, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5772645049777873785, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -903,22 +1049,57 @@ PrefabInstance:
     - target: {fileID: 5772645049777873785, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 3380540664301776703}
+      objectReference: {fileID: 217654575}
     - target: {fileID: 5772645049777873785, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5772645049777873785, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GrabFruitFromPouch
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772645049777873785, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: HandVisibility, Assembly-CSharp
+      value: HandlingFruitPouch, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772645049777873785, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7136500166336672895, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223652322528553074, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235008789289751235, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3699416259844767967, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 8033496799136007697, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3380540664301776704}
+      addedObject: {fileID: 116042538}
+    - targetCorrespondingSourceObject: {fileID: 8033496799136007697, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 116042537}
+    - targetCorrespondingSourceObject: {fileID: 8033496799136007697, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 116042542}
+    - targetCorrespondingSourceObject: {fileID: 7223652322528553074, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 217654571}
+    - targetCorrespondingSourceObject: {fileID: 7223652322528553074, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 217654570}
+    - targetCorrespondingSourceObject: {fileID: 7223652322528553074, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 217654575}
   m_SourcePrefab: {fileID: 100100000, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
 --- !u!114 &3380540664301776702 stripped
 MonoBehaviour:
@@ -931,24 +1112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.XRInteractionManager
---- !u!1 &3380540664301776703 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3699416259844767967, guid: 53f9a4ab228c52744905dd95584cc565, type: 3}
-  m_PrefabInstance: {fileID: 3380540664301776701}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3380540664301776704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3380540664301776703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e31ed9b9859bc3348b818367fe8b2e0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HandlingFruitPouch
-  xrManager: {fileID: 3380540664301776702}
 --- !u!1001 &8542092592474619037
 PrefabInstance:
   m_ObjectHideFlags: 0
