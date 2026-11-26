@@ -1,13 +1,11 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.XR.Interaction.Toolkit.Interactors;
 public class InstantUnselect : MonoBehaviour
 {
     public XRInteractionManager xrManager;
-    IXRSelectInteractor interactor;
-    public void UnSelect() 
+    public void UnSelect(SelectEnterEventArgs args) 
     {
-        xrManager.SelectExit(interactor, gameObject.GetComponent<XRGrabInteractable>());
+        xrManager.SelectExit(args.interactorObject, gameObject.GetComponent<XRGrabInteractable>());
     }
 }
