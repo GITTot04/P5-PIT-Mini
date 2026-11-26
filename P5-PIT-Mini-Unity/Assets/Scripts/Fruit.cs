@@ -6,13 +6,12 @@ public class Fruit : MonoBehaviour
     bool canBePutInPouch;
     GameObject fruitPouch;
     bool isDistraction;
-    GameObject enemy;
+    EnemyFollow enemyFollow;
     GameObject ground;
-    [SerializeField] float distractionDistance;
     private void Start()
     {
         ground = GameObject.Find("Ground");
-        enemy = GameObject.Find("Enemy");
+        enemyFollow = GameObject.Find("Enemy").GetComponent<EnemyFollow>();
         fruitPouch = GameObject.Find("Fruit Pouch");
     }
     public void Drop()
@@ -63,11 +62,10 @@ public class Fruit : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject == ground && (transform.position - enemy.transform.position).magnitude < distractionDistance && isDistraction)
+        if (collision.gameObject == ground && (transform.position - enemyFollow.gameObject.transform.position).magnitude <= enemyFollow.longViewDistance && isDistraction)
         {
-            EnemyFollow eF = enemy.GetComponent<EnemyFollow>();
-            eF.clock = 0;
-            eF.lastPlayerSighting = transform.position;
+            enemyFollow.clock = 0;
+            enemyFollow.lastPlayerSighting = transform.position;
             isDistraction = false;
         }
     }

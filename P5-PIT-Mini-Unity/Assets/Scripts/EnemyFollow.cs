@@ -7,7 +7,7 @@ public class EnemyFollow : MonoBehaviour
     [SerializeField] LayerMask longViewMask;
     [SerializeField] LayerMask shortViewMask;
     [SerializeField] float shortViewDistance;
-    [SerializeField] float longViewDistance;
+    [SerializeField] public float longViewDistance;
 
     [SerializeField] float viewAngle;
     [SerializeField] GameObject player;
