@@ -16,7 +16,7 @@ public class EnemyFollow : MonoBehaviour
     [SerializeField] float walkSpeed;
 
     [SerializeField] float lookForPlayerTime;
-    float clock;
+    public float clock;
 
     public Vector3 lastPlayerSighting;
 
