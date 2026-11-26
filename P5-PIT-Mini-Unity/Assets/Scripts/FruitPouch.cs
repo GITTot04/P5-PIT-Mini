@@ -5,8 +5,8 @@ using TMPro;
 public class FruitPouch : MonoBehaviour
 {
     public List<GameObject> collectedFruits = new List<GameObject>();
-    TextMeshProUGUI textComponent;
-    int totalFruit;
+    public TextMeshProUGUI textComponent;
+    public int totalFruit;
     GameObject winCanvas;
     void Start()
     {
