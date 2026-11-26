@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 6938660577679287254}
   - component: {fileID: 6812001630664397903}
   - component: {fileID: 5430844574854384885}
-  m_Layer: 0
+  - component: {fileID: 1998284081745335062}
+  m_Layer: 9
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,11 +165,39 @@ MonoBehaviour:
   NMAgent: {fileID: 6812001630664397903}
   walkSpeed: 2
   lookForPlayerTime: 10
+  clock: 0
   lastPlayerSighting: {x: 0, y: 0, z: 0}
   targetPositions:
   - {x: 6, y: 0}
   - {x: -6, y: 2}
   - {x: 12, y: 4}
+--- !u!54 &1998284081745335062
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3840556661792423753}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7217466966184064849
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,7 +209,7 @@ GameObject:
   - component: {fileID: 8287211453987346009}
   - component: {fileID: 5028394533094468408}
   - component: {fileID: 5497309054799027899}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: face
   m_TagString: Untagged
   m_Icon: {fileID: 0}
