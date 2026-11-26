@@ -4,6 +4,7 @@ public class GettingCaught : MonoBehaviour
 {
     public GameObject enemy;
     GameObject loseCanvas;
+    float killRange = 1.5f;
     private void Start()
     {
         enemy = GameObject.Find("Enemy");
@@ -11,10 +12,9 @@ public class GettingCaught : MonoBehaviour
         loseCanvas.SetActive(false);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void Update()
     {
-        Debug.Log("Collision detected with: " + collision.gameObject.name);
-        if (collision.gameObject == enemy)
+        if (Vector3.Distance(transform.position, enemy.transform.position) < killRange)
         {
             loseCanvas.SetActive(true);
             Time.timeScale = 0;
