@@ -2,17 +2,19 @@ using UnityEngine;
 
 public class GettingCaught : MonoBehaviour
 {
-    GameObject enemy;
+    public GameObject enemy;
     GameObject loseCanvas;
+    float killRange = 1.5f;
     private void Start()
     {
         enemy = GameObject.Find("Enemy");
         loseCanvas = GameObject.Find("LoseCanvas");
+        loseCanvas.SetActive(false);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void Update()
     {
-        if (collision.gameObject == enemy)
+        if (Vector3.Distance(transform.position, enemy.transform.position) < killRange)
         {
             loseCanvas.SetActive(true);
             Time.timeScale = 0;

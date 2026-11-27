@@ -11,6 +11,7 @@ public class FruitPouch : MonoBehaviour
     void Start()
     {
         winCanvas = GameObject.Find("WinCanvas");
+        winCanvas.SetActive(false);
         totalFruit = GameObject.FindGameObjectsWithTag("Fruit").Length;
         textComponent = GameObject.Find("Pouch Text").GetComponent<TextMeshProUGUI>();
         textComponent.text = $"0/{totalFruit}";

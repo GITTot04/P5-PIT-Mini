@@ -164,6 +164,7 @@ MonoBehaviour:
   NMAgent: {fileID: 6812001630664397903}
   walkSpeed: 2
   lookForPlayerTime: 10
+  clock: 0
   lastPlayerSighting: {x: 0, y: 0, z: 0}
   targetPositions:
   - {x: 6, y: 0}
