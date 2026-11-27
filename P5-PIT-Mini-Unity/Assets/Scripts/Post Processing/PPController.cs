@@ -23,7 +23,7 @@ public class PPController : MonoBehaviour
     private float maxFilmGrainIntensity = 0.8f;
     private float minFilmGrainIntensity = 0f;
 
-    [SerializeField] private float lerpSpeed = 5f;
+    [SerializeField] private float lerpSpeed;
 
 
 
