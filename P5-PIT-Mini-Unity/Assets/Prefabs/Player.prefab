@@ -698,6 +698,7 @@ GameObject:
   - component: {fileID: 8339480654132559414}
   - component: {fileID: 2895929303664148888}
   - component: {fileID: 291767538314429190}
+  - component: {fileID: 1654162952809145667}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -937,6 +938,31 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &1654162952809145667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5368055603239529904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 898328a2e0672cd4f899bfffd988aa12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PPController
+  cam: {fileID: 0}
+  radius: 0.5
+  maxDistance: 20
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  postProcessingObject: {fileID: 0}
+  postProcessingVolume: {fileID: 0}
+  vignette: {fileID: 0}
+  vignetteIntensity: 0
+  filmGrain: {fileID: 0}
+  filmGrainIntensity: 0
+  lerpSpeed: 0
 --- !u!1 &5790640571181978711
 GameObject:
   m_ObjectHideFlags: 0

@@ -24,6 +24,7 @@ public class EnemyFollow : MonoBehaviour
     public Animator animator;
 
     [SerializeField ]Vector2[] targetPositions;
+    [SerializeField ]GameObject[] gameObjectTargetPositions;
     int targetCounter = 0;
     void Start()
     {
@@ -71,15 +72,15 @@ public class EnemyFollow : MonoBehaviour
            
             
         }
-        else if (targetPositions.Length > 0)
+        else if (gameObjectTargetPositions.Length > 0)
         {
             animator.SetBool("isWalking", true);
             NMAgent.speed = walkSpeed;
-            NMAgent.destination = new Vector3(targetPositions[targetCounter].x, 0f, targetPositions[targetCounter].y);
-            if ((position2D - targetPositions[targetCounter]).magnitude < 0.5f)
+            NMAgent.destination = new Vector3(gameObjectTargetPositions[targetCounter].transform.position.x, 0f, gameObjectTargetPositions[targetCounter].transform.position.z);
+            if ((position2D - new Vector2(gameObjectTargetPositions[targetCounter].transform.position.x, gameObjectTargetPositions[targetCounter].transform.position.z)).magnitude < 1f)
             {
                 targetCounter += 1;
-                if (targetCounter >= targetPositions.Length)
+                if (targetCounter >= gameObjectTargetPositions.Length)
                 {
                     targetCounter = 0;
                 }
